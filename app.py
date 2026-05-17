@@ -803,7 +803,9 @@ def get_reply(user_msg: str) -> str:
 @app.route("/")
 def index():
     return send_from_directory(".", "index.html")
-
+@app.route("/<path:filename>")
+def static_files(filename):
+    return send_from_directory(".", filename)
 
 @app.route("/chat", methods=["POST"])
 def chat():
