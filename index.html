@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arki — SmartHireArch Assistant</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="shell">
+
+    <!-- ── Header ── -->
+    <div class="header">
+      <div class="avatar">A</div>
+      <div class="header-text">
+        <h1>Arki</h1>
+        <p>SmartHireArch AI Assistant · Davao City</p>
+      </div>
+      <div class="status-dot"></div>
+    </div>
+
+    
+    <div class="suggestions">
+      <button class="chip" data-msg="What is SmartHireArch?">What is SmartHireArch?</button>
+      <button class="chip" data-msg="How do I register as a client?">Register as client</button>
+      <button class="chip" data-msg="How do I apply as an architect?">Apply as architect</button>
+      <button class="chip" data-msg="What can the Admin dashboard do?">Admin dashboard</button>
+      <button class="chip" data-msg="What are the system features?">System features</button>
+      <button class="chip" data-msg="How is data kept secure?">Data security</button>
+    </div>
+
+    
+    <div class="chat" id="chat">
+
+      <div class="welcome">
+        <h2>Hello! I'm Arki 👋</h2>
+        <p>Your SmartHireArch guide. Ask me anything about the web-based hub client acquisition system — from registration to recruitment.</p>
+      </div>
+
+      
+      <div class="msg bot">
+        <div class="msg-avatar">A</div>
+        <div class="bubble">
+          <strong>Welcome to SmartHireArch!</strong><br>
+          I'm Arki, your dedicated assistant for this platform. I can help you understand
+          how to submit project inquiries, track application status, navigate the admin
+          dashboard, or learn about the system's security features.<br>
+          <em>Try one of the quick buttons above or type your question below.</em>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="input-area">
+      <textarea
+        id="userInput"
+        rows="1"
+        placeholder="Ask me about SmartHireArch…"
+      ></textarea>
+      <button id="sendBtn" aria-label="Send message">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="input-hint">Powered by SmartHireArch · Arki v1.0</div>
+
+  </div>
+
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
